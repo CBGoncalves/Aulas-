@@ -1,0 +1,11 @@
+C:\Users\43442346851\Documents\Exercicio\helpizinho\obj\Debug\netcoreapp2.2\helpizinho.csprojAssemblyReference.cache
+C:\Users\43442346851\Documents\Exercicio\helpizinho\obj\Debug\netcoreapp2.2\helpizinho.csproj.CoreCompileInputs.cache
+C:\Users\43442346851\Documents\Exercicio\helpizinho\obj\Debug\netcoreapp2.2\helpizinho.AssemblyInfoInputs.cache
+C:\Users\43442346851\Documents\Exercicio\helpizinho\obj\Debug\netcoreapp2.2\helpizinho.AssemblyInfo.cs
+C:\Users\43442346851\Documents\Exercicio\helpizinho\bin\Debug\netcoreapp2.2\helpizinho.deps.json
+C:\Users\43442346851\Documents\Exercicio\helpizinho\bin\Debug\netcoreapp2.2\helpizinho.runtimeconfig.json
+C:\Users\43442346851\Documents\Exercicio\helpizinho\bin\Debug\netcoreapp2.2\helpizinho.runtimeconfig.dev.json
+C:\Users\43442346851\Documents\Exercicio\helpizinho\bin\Debug\netcoreapp2.2\helpizinho.dll
+C:\Users\43442346851\Documents\Exercicio\helpizinho\bin\Debug\netcoreapp2.2\helpizinho.pdb
+C:\Users\43442346851\Documents\Exercicio\helpizinho\obj\Debug\netcoreapp2.2\helpizinho.dll
+C:\Users\43442346851\Documents\Exercicio\helpizinho\obj\Debug\netcoreapp2.2\helpizinho.pdb
