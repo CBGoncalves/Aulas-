@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace calculadora
+namespace Calculator
 {
     class Program
     {
@@ -8,49 +8,41 @@ namespace calculadora
         {
             int num1 = 0;
             int num2 = 0;
-            string oper;
+            double total;
+            int oper;
 
-            Console.WriteLine("Digite o 1° Número");
+            Console.WriteLine("Digite o 1º Número:");
             num1 = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Digite o 2° Número");
+            Console.WriteLine("Digite o 2º Número");
             num2 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Qual o operador desejado");
-            oper = Console.ReadLine();
-
+            Console.WriteLine("Qual o operador desejado?");
+            Console.WriteLine("(1) Soma | (2) Multiplicação | (3) Divisão | (4) Subtração ");
+            oper = int.Parse(Console.ReadLine());
+            
             switch (oper) {
                 case 1:
-                    Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
-                    break;
-
+                total = num1 + num2;
+                Console.WriteLine("O valor dessa operação é: {0}",total);
+                break;
                 case 2:
-                    Console.WriteLine($"{num1} - {num2} = {num1 - num2}");
-                    break;
-
-                case 3: 
-                Console.WriteLine($"{num1} * {num2} = {num1 * num2}");
-                    break;
-
+                total = num1 * num2;
+                Console.WriteLine("O valor dessa operação é: {0}",total);
+                break;
+                case 3:
+                total = num1 / num2;
+                Console.WriteLine("O valor dessa operação é: {0}",total);
+                break;
                 case 4:
-                Console.WriteLine($"{num1} / {num2} = {num1 / num2}");
-                    break;
-
+                total = num1 - num2;
+                Console.WriteLine("O valor dessa operação é: {0}",total);
+                break;
                 default:
-                    Console.WriteLine("Operador não encontrado");
-                    break;
-
-
-
+                Console.WriteLine("Operação inválida");
+                break;
             }
-            
-            
-            
-            
-            
-            
 
-
+        
         }
     }
 }

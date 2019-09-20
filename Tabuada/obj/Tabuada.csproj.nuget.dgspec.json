@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\43442346851\\Documents\\Exercicio\\Calculadora\\calculadora.csproj": {}
+    "C:\\Users\\43442346851\\Documents\\Exercicio\\Tabuada\\Tabuada.csproj": {}
   },
   "projects": {
-    "C:\\Users\\43442346851\\Documents\\Exercicio\\Calculadora\\calculadora.csproj": {
+    "C:\\Users\\43442346851\\Documents\\Exercicio\\Tabuada\\Tabuada.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\43442346851\\Documents\\Exercicio\\Calculadora\\calculadora.csproj",
-        "projectName": "calculadora",
-        "projectPath": "C:\\Users\\43442346851\\Documents\\Exercicio\\Calculadora\\calculadora.csproj",
+        "projectUniqueName": "C:\\Users\\43442346851\\Documents\\Exercicio\\Tabuada\\Tabuada.csproj",
+        "projectName": "Tabuada",
+        "projectPath": "C:\\Users\\43442346851\\Documents\\Exercicio\\Tabuada\\Tabuada.csproj",
         "packagesPath": "C:\\Users\\43442346851\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\43442346851\\Documents\\Exercicio\\Calculadora\\obj\\",
+        "outputPath": "C:\\Users\\43442346851\\Documents\\Exercicio\\Tabuada\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
