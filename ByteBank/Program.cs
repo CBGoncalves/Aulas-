@@ -5,6 +5,8 @@ namespace ByteBank
 {
     class Program
     {
+        private static bool senhaOk;
+
         static void Main(string[] args)
         {
             System.Console.WriteLine("----------------------------");
@@ -27,7 +29,7 @@ namespace ByteBank
                 string senha = Console.ReadLine();
                 bool senhaOk = login1.TrocaSenha(senha);
                 if(!senhaOk){
-                    System.Console.WriteLine("Senah não atende aos requsitos");
+                    System.Console.WriteLine("Senha não atende aos requsitos");
                 } else {
                     System.Console.WriteLine("Senha Trocada com sucesso");
                 }
