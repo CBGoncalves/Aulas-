@@ -51,7 +51,11 @@ namespace ByteBank
             }while(!saldoValido);
 
             ContaCorrente contaCorrente = new ContaCorrente(agencia,conta,cliente1);
-            contaCorrente.Saldo = saldo;
+            contaCorrente.Deposito(saldo);
+
+            bool valorValido = false;
+
+            do {
 
             Console.WriteLine("ByteBank - Deposito");
             Cliente usuario = contaCorrente.Titular;
@@ -60,9 +64,16 @@ namespace ByteBank
             Console.WriteLine($"Saldo: {contaCorrente.Saldo}");
             Console.Write("Digite o valor do Deposito: ");
             double valor = double.Parse(Console.ReadLine());
+            if (valor > 0){
             saldo = contaCorrente.Deposito(valor);
             Console.WriteLine($"Saldo atual: {saldo}");
             Console.WriteLine();
+            }else{
+                System.Console.WriteLine("Deposito invalido");
+            }
+
+            }while(!valorValido);
+            
 
             Console.WriteLine("ByteBank - Saque");
             Console.WriteLine($"Bem vindo - {usuario.Nome}");

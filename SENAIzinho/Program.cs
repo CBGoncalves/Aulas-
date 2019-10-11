@@ -7,6 +7,7 @@ namespace SENAIzinho {
         Sala sala = new Sala ();
 
         static void Main (string[] args) {
+
             bool inicio = false;
 
             do {
@@ -28,54 +29,24 @@ namespace SENAIzinho {
 
                 switch (opcao) {
                     case "1":
-                        CadastrarAluno();
+                        CadastrarAluno ();
 
                         break;
 
                     case "2":
-
-                        bool capacidade = false;
-
-                        do {
-                            System.Console.WriteLine ("Capacidade Total: ");
-                            sala.capacidadeTotal = int.Parse (Console.ReadLine ());
-                            if (sala.sala <= 10) {
-                                System.Console.WriteLine ("Numero Valido");
-                            } else {
-                                System.Console.WriteLine ("A capacidade total não pode passar de 10 alunos");
-                            }
-                        } while (!capacidade);
-
-                        System.Console.WriteLine ("Numero da Sala: ");
-                        sala.numeroSala = int.Parse (Console.ReadLine ());
-
-                        System.Console.WriteLine ("Alunos: ");
-                        sala.alunos = Console.ReadLine ();
+                        CadastrarSala ();
 
                         break;
 
                     case "3":
-                        System.Console.WriteLine ($"Nome: {aluno.Nome} ");
-
-                        bool alocar = false;
-
-                        do {
-                            System.Console.WriteLine ("Digite o numero da sala:");
-                            sala.numeroSala = int.Parse (Console.ReadLine ());
-
-                            if (sala.capacidadeAtual < 10) {
-                                System.Console.WriteLine ("Aluno alocado");
-                            } else {
-                                System.Console.WriteLine ("Esta sala esta lotada");
-                            }
-                        } while (!alocar);
+                        AlocarAluno ();
 
                         break;
                 }
             } while (!inicio);
         }
-        public void CadastrarAluno(string Nome, DateTime DataNascimento) {
-            
+        public void CadastrarAluno () {
+
             if (sala.capacidadeAtual <= 100) {
                 System.Console.WriteLine ("Nome: ");
                 aluno.Nome = Console.ReadLine ();
@@ -92,7 +63,48 @@ namespace SENAIzinho {
 
         }
 
-        public void CadastrarSala() 
+        public void CadastrarSala () {
+            bool capacidade = false;
+
+            do {
+                System.Console.WriteLine ("Capacidade Total: ");
+                sala.capacidadeTotal = int.Parse (Console.ReadLine ());
+                if (sala.sala <= 10) {
+                    System.Console.WriteLine ("Numero Valido");
+                } else {
+                    System.Console.WriteLine ("A capacidade total não pode passar de 10 alunos");
+                }
+            } while (!capacidade);
+
+            System.Console.WriteLine ("Numero da Sala: ");
+            sala.numeroSala = int.Parse (Console.ReadLine ());
+
+            System.Console.WriteLine ("Alunos: ");
+            sala.alunos = Console.ReadLine ();
+
+        }
+
+        public void AlocarAluno () {
+
+            System.Console.WriteLine ($"Nome: {aluno.Nome} ");
+
+            bool alocar = false;
+
+            do {
+                System.Console.WriteLine ("Digite o numero da sala:");
+                sala.numeroSala = int.Parse (Console.ReadLine ());
+
+                if (sala.capacidadeAtual < 10) {
+                    System.Console.WriteLine ("Aluno alocado");
+                } else {
+                    System.Console.WriteLine ("Esta sala esta lotada");
+                }
+            } while (!alocar);
+        }
+
+        public void VarificarSalas () {
+
+        }
 
     }
 }
