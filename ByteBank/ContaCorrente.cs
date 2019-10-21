@@ -24,10 +24,13 @@ namespace ByteBank
             return this._saldo;
         }
         public bool Saque(double valor){
-            if(valor <= this._saldo){
+            if(valor <= this._saldo)
+            {
                 this._saldo -= valor;
                 return true;
-            } else{
+            } 
+            else
+            {
                 return false;
             }
         }
