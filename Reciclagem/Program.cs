@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using Reciclagem.Models;
 using Reciclagem.Interfaces;
+using System.Linq;
 
 namespace Reciclagem
 {
     enum TipoEnum : uint
     {
         GARRAFA,
-        GARRAFAPET,
+        GARRAFA_PET,
         GUARDA_CHUVA,
         LATINHA,
         PAPELÃO,
@@ -89,6 +90,55 @@ namespace Reciclagem
             
         }
 
+        public static void Reciclar(Lixo lixo)
+        {
+
+            Type tipoLixo = lixo.GetType().GetInterfaces().FirstOrDefault();
+
+            if (tipoLixo.Equals(typeof(IPapel)))
+            {
+                IPapel lixoConvertido = (IPapel)lixo;
+                Console.BackgroundColor = ConsoleColor.Blue;
+                System.Console.WriteLine($"{lixoConvertido.LixoPapel()} deve ir para a lixeira Azul");
+                Console.ResetColor();
+
+            }
+            else if (tipoLixo.Equals(typeof(IMetais)))
+            {
+                IMetais lixoConvertido = (IMetais)lixo;
+                Console.BackgroundColor = ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.Black;
+                System.Console.WriteLine($"{lixoConvertido.LixoMetal()} deve ir para a lixeira Amarela");
+                Console.ResetColor();
+            }
+            else if (tipoLixo.Equals(typeof(IPlastico)))
+            {
+                IPlastico lixoConvertido = (IPlastico)lixo;
+                Console.BackgroundColor = ConsoleColor.Red;
+                System.Console.WriteLine($"{lixoConvertido.LixoPlastico()} deve ir para a lixeira Vermelha");
+                Console.ResetColor();
+            }
+            else if (tipoLixo.Equals(typeof(IVidro)))
+            {
+                IVidro lixoConvertido = (IVidro)lixo;
+                Console.BackgroundColor = ConsoleColor.Green;
+                System.Console.WriteLine($"{lixoConvertido.LixoVidro()} deve ir para a lixeira Verde");
+                Console.ResetColor();
+            }
+            else if (tipoLixo.Equals(typeof(IOrganico)))
+            {
+                IOrganico lixoConvertido = (IOrganico)lixo;
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.BackgroundColor = ConsoleColor.Black;
+                System.Console.WriteLine($"{lixoConvertido.LixoOrganico()} deve ir para a Composteira");
+                Console.ResetColor();
+            }
+            
+            System.Console.WriteLine("Aperte ENTER para voltar ao menu principal");
+            Console.ReadLine();
+        }
+        
+
         public static void DestacarOpcao(string opcao)
         {
             Console.BackgroundColor = ConsoleColor.Green;
@@ -102,3 +152,5 @@ namespace Reciclagem
         }
     }
 }
+
+
