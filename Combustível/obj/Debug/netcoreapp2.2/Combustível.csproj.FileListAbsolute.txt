@@ -1,0 +1,11 @@
+C:\Users\43442346851\Documents\Exercicio\Combustível\bin\Debug\netcoreapp2.2\Combustível.deps.json
+C:\Users\43442346851\Documents\Exercicio\Combustível\bin\Debug\netcoreapp2.2\Combustível.runtimeconfig.json
+C:\Users\43442346851\Documents\Exercicio\Combustível\bin\Debug\netcoreapp2.2\Combustível.runtimeconfig.dev.json
+C:\Users\43442346851\Documents\Exercicio\Combustível\bin\Debug\netcoreapp2.2\Combustível.dll
+C:\Users\43442346851\Documents\Exercicio\Combustível\bin\Debug\netcoreapp2.2\Combustível.pdb
+C:\Users\43442346851\Documents\Exercicio\Combustível\obj\Debug\netcoreapp2.2\Combustível.csprojAssemblyReference.cache
+C:\Users\43442346851\Documents\Exercicio\Combustível\obj\Debug\netcoreapp2.2\Combustível.csproj.CoreCompileInputs.cache
+C:\Users\43442346851\Documents\Exercicio\Combustível\obj\Debug\netcoreapp2.2\Combustível.AssemblyInfoInputs.cache
+C:\Users\43442346851\Documents\Exercicio\Combustível\obj\Debug\netcoreapp2.2\Combustível.AssemblyInfo.cs
+C:\Users\43442346851\Documents\Exercicio\Combustível\obj\Debug\netcoreapp2.2\Combustível.dll
+C:\Users\43442346851\Documents\Exercicio\Combustível\obj\Debug\netcoreapp2.2\Combustível.pdb

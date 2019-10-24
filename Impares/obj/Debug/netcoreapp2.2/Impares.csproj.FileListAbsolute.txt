@@ -1,0 +1,11 @@
+C:\Users\43442346851\Documents\Extras\Impares\bin\Debug\netcoreapp2.2\Impares.deps.json
+C:\Users\43442346851\Documents\Extras\Impares\bin\Debug\netcoreapp2.2\Impares.runtimeconfig.json
+C:\Users\43442346851\Documents\Extras\Impares\bin\Debug\netcoreapp2.2\Impares.runtimeconfig.dev.json
+C:\Users\43442346851\Documents\Extras\Impares\bin\Debug\netcoreapp2.2\Impares.dll
+C:\Users\43442346851\Documents\Extras\Impares\bin\Debug\netcoreapp2.2\Impares.pdb
+C:\Users\43442346851\Documents\Extras\Impares\obj\Debug\netcoreapp2.2\Impares.csprojAssemblyReference.cache
+C:\Users\43442346851\Documents\Extras\Impares\obj\Debug\netcoreapp2.2\Impares.csproj.CoreCompileInputs.cache
+C:\Users\43442346851\Documents\Extras\Impares\obj\Debug\netcoreapp2.2\Impares.AssemblyInfoInputs.cache
+C:\Users\43442346851\Documents\Extras\Impares\obj\Debug\netcoreapp2.2\Impares.AssemblyInfo.cs
+C:\Users\43442346851\Documents\Extras\Impares\obj\Debug\netcoreapp2.2\Impares.dll
+C:\Users\43442346851\Documents\Extras\Impares\obj\Debug\netcoreapp2.2\Impares.pdb
