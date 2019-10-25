@@ -1,0 +1,11 @@
+C:\Users\43442346851\Documents\Exercicio\Peso\obj\Debug\netcoreapp2.2\Peso.csprojAssemblyReference.cache
+C:\Users\43442346851\Documents\Exercicio\Peso\obj\Debug\netcoreapp2.2\Peso.csproj.CoreCompileInputs.cache
+C:\Users\43442346851\Documents\Exercicio\Peso\obj\Debug\netcoreapp2.2\Peso.AssemblyInfoInputs.cache
+C:\Users\43442346851\Documents\Exercicio\Peso\obj\Debug\netcoreapp2.2\Peso.AssemblyInfo.cs
+C:\Users\43442346851\Documents\Exercicio\Peso\bin\Debug\netcoreapp2.2\Peso.deps.json
+C:\Users\43442346851\Documents\Exercicio\Peso\bin\Debug\netcoreapp2.2\Peso.runtimeconfig.json
+C:\Users\43442346851\Documents\Exercicio\Peso\bin\Debug\netcoreapp2.2\Peso.runtimeconfig.dev.json
+C:\Users\43442346851\Documents\Exercicio\Peso\bin\Debug\netcoreapp2.2\Peso.dll
+C:\Users\43442346851\Documents\Exercicio\Peso\bin\Debug\netcoreapp2.2\Peso.pdb
+C:\Users\43442346851\Documents\Exercicio\Peso\obj\Debug\netcoreapp2.2\Peso.dll
+C:\Users\43442346851\Documents\Exercicio\Peso\obj\Debug\netcoreapp2.2\Peso.pdb

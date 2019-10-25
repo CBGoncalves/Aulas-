@@ -1,0 +1,11 @@
+C:\Users\43442346851\Documents\Exercicio\Verbo no Infinitivo\bin\Debug\netcoreapp2.2\Verbo no Infinitivo.deps.json
+C:\Users\43442346851\Documents\Exercicio\Verbo no Infinitivo\bin\Debug\netcoreapp2.2\Verbo no Infinitivo.runtimeconfig.json
+C:\Users\43442346851\Documents\Exercicio\Verbo no Infinitivo\bin\Debug\netcoreapp2.2\Verbo no Infinitivo.runtimeconfig.dev.json
+C:\Users\43442346851\Documents\Exercicio\Verbo no Infinitivo\bin\Debug\netcoreapp2.2\Verbo no Infinitivo.dll
+C:\Users\43442346851\Documents\Exercicio\Verbo no Infinitivo\bin\Debug\netcoreapp2.2\Verbo no Infinitivo.pdb
+C:\Users\43442346851\Documents\Exercicio\Verbo no Infinitivo\obj\Debug\netcoreapp2.2\Verbo no Infinitivo.csprojAssemblyReference.cache
+C:\Users\43442346851\Documents\Exercicio\Verbo no Infinitivo\obj\Debug\netcoreapp2.2\Verbo no Infinitivo.csproj.CoreCompileInputs.cache
+C:\Users\43442346851\Documents\Exercicio\Verbo no Infinitivo\obj\Debug\netcoreapp2.2\Verbo no Infinitivo.AssemblyInfoInputs.cache
+C:\Users\43442346851\Documents\Exercicio\Verbo no Infinitivo\obj\Debug\netcoreapp2.2\Verbo no Infinitivo.AssemblyInfo.cs
+C:\Users\43442346851\Documents\Exercicio\Verbo no Infinitivo\obj\Debug\netcoreapp2.2\Verbo no Infinitivo.dll
+C:\Users\43442346851\Documents\Exercicio\Verbo no Infinitivo\obj\Debug\netcoreapp2.2\Verbo no Infinitivo.pdb

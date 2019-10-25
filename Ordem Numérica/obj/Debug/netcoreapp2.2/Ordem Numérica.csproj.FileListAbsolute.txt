@@ -1,0 +1,11 @@
+C:\Users\43442346851\Documents\Exercicio\Ordem Numérica\obj\Debug\netcoreapp2.2\Ordem Numérica.csprojAssemblyReference.cache
+C:\Users\43442346851\Documents\Exercicio\Ordem Numérica\obj\Debug\netcoreapp2.2\Ordem Numérica.csproj.CoreCompileInputs.cache
+C:\Users\43442346851\Documents\Exercicio\Ordem Numérica\obj\Debug\netcoreapp2.2\Ordem Numérica.AssemblyInfoInputs.cache
+C:\Users\43442346851\Documents\Exercicio\Ordem Numérica\obj\Debug\netcoreapp2.2\Ordem Numérica.AssemblyInfo.cs
+C:\Users\43442346851\Documents\Exercicio\Ordem Numérica\bin\Debug\netcoreapp2.2\Ordem Numérica.deps.json
+C:\Users\43442346851\Documents\Exercicio\Ordem Numérica\bin\Debug\netcoreapp2.2\Ordem Numérica.runtimeconfig.json
+C:\Users\43442346851\Documents\Exercicio\Ordem Numérica\bin\Debug\netcoreapp2.2\Ordem Numérica.runtimeconfig.dev.json
+C:\Users\43442346851\Documents\Exercicio\Ordem Numérica\bin\Debug\netcoreapp2.2\Ordem Numérica.dll
+C:\Users\43442346851\Documents\Exercicio\Ordem Numérica\bin\Debug\netcoreapp2.2\Ordem Numérica.pdb
+C:\Users\43442346851\Documents\Exercicio\Ordem Numérica\obj\Debug\netcoreapp2.2\Ordem Numérica.dll
+C:\Users\43442346851\Documents\Exercicio\Ordem Numérica\obj\Debug\netcoreapp2.2\Ordem Numérica.pdb

@@ -1,0 +1,11 @@
+C:\Users\43442346851\Documents\Exercicio\Triangulo\obj\Debug\netcoreapp2.2\Triangulo.csprojAssemblyReference.cache
+C:\Users\43442346851\Documents\Exercicio\Triangulo\obj\Debug\netcoreapp2.2\Triangulo.csproj.CoreCompileInputs.cache
+C:\Users\43442346851\Documents\Exercicio\Triangulo\obj\Debug\netcoreapp2.2\Triangulo.AssemblyInfoInputs.cache
+C:\Users\43442346851\Documents\Exercicio\Triangulo\obj\Debug\netcoreapp2.2\Triangulo.AssemblyInfo.cs
+C:\Users\43442346851\Documents\Exercicio\Triangulo\bin\Debug\netcoreapp2.2\Triangulo.deps.json
+C:\Users\43442346851\Documents\Exercicio\Triangulo\bin\Debug\netcoreapp2.2\Triangulo.runtimeconfig.json
+C:\Users\43442346851\Documents\Exercicio\Triangulo\bin\Debug\netcoreapp2.2\Triangulo.runtimeconfig.dev.json
+C:\Users\43442346851\Documents\Exercicio\Triangulo\bin\Debug\netcoreapp2.2\Triangulo.dll
+C:\Users\43442346851\Documents\Exercicio\Triangulo\bin\Debug\netcoreapp2.2\Triangulo.pdb
+C:\Users\43442346851\Documents\Exercicio\Triangulo\obj\Debug\netcoreapp2.2\Triangulo.dll
+C:\Users\43442346851\Documents\Exercicio\Triangulo\obj\Debug\netcoreapp2.2\Triangulo.pdb

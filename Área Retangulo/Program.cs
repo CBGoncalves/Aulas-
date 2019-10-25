@@ -53,7 +53,7 @@ namespace Área_Retangulo
             num1 = int.Parse(Console.ReadLine());
             System.Console.WriteLine("Digite o valor da altura");
             num2 = int.Parse(Console.ReadLine());
-            total = num1 * 2 + num2 * 2 % 2;
+            total = num1 * 2 + num2 * 2 / 2;
             System.Console.WriteLine("A Diagonal do retangulo é de: {0}",total);
             break;
             }
