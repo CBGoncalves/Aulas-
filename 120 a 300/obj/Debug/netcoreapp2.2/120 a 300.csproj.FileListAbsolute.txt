@@ -1,0 +1,11 @@
+C:\Users\43442346851\Documents\Exercicio\120 a 300\bin\Debug\netcoreapp2.2\120 a 300.deps.json
+C:\Users\43442346851\Documents\Exercicio\120 a 300\bin\Debug\netcoreapp2.2\120 a 300.runtimeconfig.json
+C:\Users\43442346851\Documents\Exercicio\120 a 300\bin\Debug\netcoreapp2.2\120 a 300.runtimeconfig.dev.json
+C:\Users\43442346851\Documents\Exercicio\120 a 300\bin\Debug\netcoreapp2.2\120 a 300.dll
+C:\Users\43442346851\Documents\Exercicio\120 a 300\bin\Debug\netcoreapp2.2\120 a 300.pdb
+C:\Users\43442346851\Documents\Exercicio\120 a 300\obj\Debug\netcoreapp2.2\120 a 300.csprojAssemblyReference.cache
+C:\Users\43442346851\Documents\Exercicio\120 a 300\obj\Debug\netcoreapp2.2\120 a 300.csproj.CoreCompileInputs.cache
+C:\Users\43442346851\Documents\Exercicio\120 a 300\obj\Debug\netcoreapp2.2\120 a 300.AssemblyInfoInputs.cache
+C:\Users\43442346851\Documents\Exercicio\120 a 300\obj\Debug\netcoreapp2.2\120 a 300.AssemblyInfo.cs
+C:\Users\43442346851\Documents\Exercicio\120 a 300\obj\Debug\netcoreapp2.2\120 a 300.dll
+C:\Users\43442346851\Documents\Exercicio\120 a 300\obj\Debug\netcoreapp2.2\120 a 300.pdb
