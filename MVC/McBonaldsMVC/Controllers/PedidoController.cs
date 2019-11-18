@@ -2,6 +2,7 @@ using System;
 using McBonalds_MVC.Models;
 using McBonaldsMVC.Models;
 using McBonaldsMVC.Repositories;
+using McBonaldsMVC.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,11 +13,21 @@ namespace McBonaldsMVC.Controllers
 
         PedidoRepository pedidoRepository = new PedidoRepository();
         HamburguerRepository hamburguerRepository = new HamburguerRepository();
+        ShakeRepository shakeRepository = new ShakeRepository();
+        
         public IActionResult Index()
         {
             var hamburgueres = hamburguerRepository.ObterTodos();
+
+            PedidoViewModel pedido = new PedidoViewModel();
+
+            pedido.Hamburgueres = hamburgueres;
+
+            var shakes = shakeRepository.ObterTodos();
+
+            pedido.Shakes = shakes;
             
-            return View();
+            return View(pedido);
         }
 
         public IActionResult Registrar(IFormCollection form)
@@ -25,11 +36,11 @@ namespace McBonaldsMVC.Controllers
             
             Shake shake = new Shake();
             shake.Nome = form["shake"];
-            shake.Preco = 0.0;
+            shake.Preco = shakeRepository.ObterPrecoDe(form["shake"]);
 
             pedido.Shake = shake;
 
-            Hamburguer hamburguer = new Hamburguer (form["hamburguer"], 0.0);
+            Hamburguer hamburguer = new Hamburguer (form["hamburguer"], hamburguerRepository.ObterPrecoDe(form["hamburguer"]));
 
             pedido.Hamburguer = hamburguer;
 
@@ -45,7 +56,7 @@ namespace McBonaldsMVC.Controllers
 
             pedido.DataDoPedido = DateTime.Now;
 
-            pedido.PrecoTotal = 0.0;
+            pedido.PrecoTotal = hamburguer.Preco + shake.Preco;
 
             pedidoRepository.Inserir(pedido);
             
