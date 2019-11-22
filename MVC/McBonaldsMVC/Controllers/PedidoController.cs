@@ -8,26 +8,35 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace McBonaldsMVC.Controllers
 {
-    public class PedidoController : Controller
+    public class PedidoController : AbstractController
     {
 
         PedidoRepository pedidoRepository = new PedidoRepository();
         HamburguerRepository hamburguerRepository = new HamburguerRepository();
         ShakeRepository shakeRepository = new ShakeRepository();
-        
+        ClienteRepository clienteRepository = new ClienteRepository();
+
         public IActionResult Index()
         {
-            var hamburgueres = hamburguerRepository.ObterTodos();
+            PedidoViewModel pvm = new PedidoViewModel();
+            pvm.Hamburgueres = hamburguerRepository.ObterTodos();
+            pvm.Shakes = shakeRepository.ObterTodos();
 
-            PedidoViewModel pedido = new PedidoViewModel();
+            var usuarioLogado = ObterUsuarioSession();
+            var nomeUsuarioLogado = ObterUsuarioNomeSession();
+            if (!string.IsNullOrEmpty(nomeUsuarioLogado))
+            {
+                pvm.NomeUsuario = nomeUsuarioLogado;
+            }
 
-            pedido.Hamburgueres = hamburgueres;
+            var clienteLogado = clienteRepository.ObterPor(usuarioLogado);
+            if (clienteLogado != null)
+            {
+                pvm.Cliente = clienteLogado;
+            }
 
-            var shakes = shakeRepository.ObterTodos();
 
-            pedido.Shakes = shakes;
-            
-            return View(pedido);
+            return View(pvm);
         }
 
         public IActionResult Registrar(IFormCollection form)
