@@ -1,6 +1,6 @@
 using System;
 
-namespace McBonalds_MVC.Models
+namespace McBonaldsMVC.Models
 {
     public class Cliente
     {
@@ -10,18 +10,24 @@ namespace McBonalds_MVC.Models
         public string Senha {get;set;}
         public string Email {get;set;}
         public DateTime DataNascimento {get;set;}
-        public Cliente ()
+
+        public Cliente()
         {
 
         }
-        public Cliente (string nome, string endereco, string telefone, string senha, string email, DateTime dataNascimento)
+
+        public Cliente(string nome, string endereco, string telefone, string senha, string email,
+        DateTime dataNascimento)
         {
             this.Nome = nome;
-            this.Email = email;
             this.Endereco = endereco;
             this.Telefone = telefone;
             this.Senha = senha;
+            this.Email = email;
             this.DataNascimento = dataNascimento;
+
         }
+
+
     }
 }

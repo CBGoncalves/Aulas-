@@ -14,7 +14,7 @@ namespace McBonaldsMVC.Controllers
             if (!string.IsNullOrEmpty(email))
             {
                 return email;
-            }
+            } 
             else
             {
                 return "";
@@ -26,7 +26,7 @@ namespace McBonaldsMVC.Controllers
             if (!string.IsNullOrEmpty(nome))
             {
                 return nome;
-            }
+            } 
             else
             {
                 return "";
