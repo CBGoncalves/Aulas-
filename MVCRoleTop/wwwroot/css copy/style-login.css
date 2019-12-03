@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #7d0093;
+    background-image: url(img/Fotos/s2.png);
+    font-family: 'Caibri', 'Open Sans', sans-serif;
+}
+
+h2 {
+    color: #FFC600;
+    
+}
+
+/*************************************************************
+                        INICIO - NAV
+**************************************************************/
+
+
+nav ul{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:space-around; 
+    color: #ffffff;
+    background-color: black;
+    list-style-type: none;
+    width: 100%;
+    font-size: 1.3em;
+}
+
+nav #bt-mobile-menu {
+    display: none;
+}
+
+
+
+nav ul > li > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*************************************************************
+                        FIM - NAV
+**************************************************************/
+
+
+#login {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content:space-around; 
+    flex-direction: column;
+    padding: 50px;
+}
+
+#cadastro {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content:space-around; 
+    flex-direction: column;
+    padding: 65px;
+}
+
+footer {
+    color: #ffffff;
+    background-color: black;
+}
+
+footer p {
+    margin: 1%;
+}
+
+@media (max-width: 1000px) {
+   
+
+    nav #bt-mobile-menu {
+        display: block;
+    }
+
+    nav .bt-common-menu {
+        display: none;
+    }
+
+    nav .bt-common-menu.active {
+        display: block;
+    }
+
+    nav ul.mobile-mode {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
