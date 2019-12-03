@@ -20,6 +20,8 @@ namespace MVCRoleTop.Controllers {
                     form["nome"],
                     form["email"],
                     form["senha"],
+                    form["endereco"],
+                    form["telefone"],
                     DateTime.Parse (form["data-nascimento"]));
 
                     clienteRepository.Inserir(cliente);
