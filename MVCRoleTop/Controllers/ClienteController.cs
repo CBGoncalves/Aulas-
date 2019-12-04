@@ -1,5 +1,4 @@
 using System;
-using McBonaldsMVC.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,6 +22,8 @@ namespace MVCRoleTop.Controllers
                 System.Console.WriteLine(form["email"]);
                 System.Console.WriteLine(form["senha"]);
                 System.Console.WriteLine("==================");
+
+                
 
                 return View("Sucesso");
             }

@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace MVCRoleTop.Controllers 
+namespace MVCRoleTop.Controllers
 {
     public class LocalController : Controller
     {
-        public IActionResult Index () {
-            return View (); 
+        public IActionResult Index()
+        {
+            return View();
         }
-
     }
 }

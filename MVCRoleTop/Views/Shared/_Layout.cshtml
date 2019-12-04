@@ -17,9 +17,11 @@
         @if(!"Home".Equals(nomeView))
     {
         <link href="~/css/style-login.css" rel="stylesheet" type="text/css">
-        
+        <link href="style-local.css" rel="stylesheet" type="text/css">
         
     }
+        
+
     </head>
 
     <body>
@@ -33,8 +35,8 @@
                         </a>
 
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="active">Principal</a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="Role Top.html#agenda">Agenda</a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="Role Top.html#orcamento">Orçamento</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="active">Agenda</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Orcamento" asp-action="Index">Orçamento</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Local" asp-action="Index"> Local</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Login_Cadastro">Login</a> / <a
                             asp-controller="Cliente" asp-action="Login_Cadastro">Cadastrar-se</a></li>
