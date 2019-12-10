@@ -1,36 +1,76 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RoleTopOficial.Models;
+using RoleTopOficial.Repositories;
+using RoleTopOficial.ViewModel;
 
-namespace MVCRoleTop.Controllers
+namespace RoleTopOficial.Controllers
 {
-    public class ClienteController : Controller
+    public class ClienteController : AbstractController
     {
-        [HttpGet]
-        public IActionResult Login_Cadastro()
+        EventoRepository eventorepository = new EventoRepository();
+        
+        public IActionResult Index()
         {
-            return View();
-        }
 
-        [HttpPost]
-        public IActionResult Login_Cadastro(IFormCollection form)
+            switch(ObterUsuarioNomeSession())
+            {
+                case "Administrador":
+                    return RedirectToAction("Dashboard","Administrador");
+                case "":
+                    return RedirectToAction("index","Home");
+                default:
+                    ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioNomeSession());
+                    clienteviewmodel.Eventos = eventorepository.ObterEventosCliente(ObterUsuarioNomeSession());
+                    return View(clienteviewmodel);
+            }
+
+        }
+        public IActionResult CriarEvento()
         {
-            ViewData["Action"] = "Login_Cadastro";
+            switch(ObterUsuarioNomeSession())
+            {
+                case "Administrador":
+                    return RedirectToAction("Dashboard","Administrador");
+                case "":
+                    return RedirectToAction("index","Home");
+                default:
+                    ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioNomeSession());
+                    return View(clienteviewmodel);
+            }
+
+
+        }
+        public IActionResult Logoff()
+        {
+            HttpContext.Session.Remove(SESSION_CLIENTE_NOME);
+            return RedirectToAction("index","Home");
+        }
+        [HttpPost]
+        public IActionResult CriarEvento(IFormCollection form)
+        {
             try
             {
-                System.Console.WriteLine("==================");
-                System.Console.WriteLine(form["email"]);
-                System.Console.WriteLine(form["senha"]);
-                System.Console.WriteLine("==================");
-
+                Evento evento = new Evento(
+                    form["NomeDoEvento"],
+                    DateTime.Parse(form["DataDoEvento"]),
+                    form["Pacote"],
+                    int.Parse(form["QuantidadeDePessoas"])
+                );
+                evento.DonoDoEvento = ObterUsuarioNomeSession();
+                eventorepository.Inserir(evento);
+                
+                return RedirectToAction("index","Cliente");
                 
 
-                return View("Sucesso");
-            }
-            catch (Exception e)
+            }catch(Exception e)
             {
-                System.Console.WriteLine(e.StackTrace);
-                return View("Erro");
+                return View("Fracasso");
             }
         }
     }

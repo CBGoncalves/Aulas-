@@ -1,38 +1,89 @@
-using System;
-using McBonaldsMVC.Repositories;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MVCRoleTop.Models;
+using RoleTopOficial.Models;
+using RoleTopOficial.Repositories;
+using RoleTopOficial.ViewModel;
 
-namespace MVCRoleTop.Controllers {
-    public class CadastroController : Controller {
-
-        ClienteRepository clienteRepository = new ClienteRepository();
-        public IActionResult Cadastro () {
-            return View (); 
-        }
-
-        public IActionResult CadastrarCliente (IFormCollection form) 
+namespace RoleTopOficial.Controllers
+{
+    public class CadastroController : AbstractController
+    {
+        private ClienteRepository clienteRepository = new ClienteRepository();
+        public IActionResult Index()
         {
-            ViewData["Action"] = "Cadastro";
-            try {
-                Cliente cliente = new Cliente (
-                    form["nome"],
-                    form["email"],
-                    form["senha"],
-                    form["endereco"],
-                    form["telefone"],
-                    DateTime.Parse (form["data-nascimento"]));
 
-                    clienteRepository.Inserir(cliente);
-                    
-                return View ("Sucesso");
-            } 
-            catch (Exception e) 
+
+            switch(ObterUsuarioNomeSession())
             {
-                System.Console.WriteLine (e.StackTrace);
-                return View ("Erro");
+                case "":
+                    ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioNomeSession());
+                    return View(clienteviewmodel);
+                default:
+                    return RedirectToAction("index","Home");
             }
+
+
+            
         }
+        public IActionResult Login()
+        {
+
+            switch(ObterUsuarioNomeSession())
+            {
+                case "":
+                    ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioNomeSession());
+                    return View(clienteviewmodel);
+                default:
+                    return RedirectToAction("index","Home");
+            }
+
+        }
+
+        [HttpPost]
+        public IActionResult Logar(IFormCollection form)
+        {
+            Cliente cliente = clienteRepository.ObterPor(form["Usuario"]);
+
+            HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Usuario);
+            return RedirectToAction("index","Cliente");
+        }
+
+        [HttpPost]
+        public IActionResult Cadastrar(IFormCollection form)
+        {
+            try
+            {
+
+                if( form["Senha"] == form["RepetirSenha"] )
+                {
+
+                    Cliente cliente = new Cliente(form["Nome"],
+                        form["Usuario"],
+                        form["Senha"],
+                        form["email"],
+                        DateTime.Parse(form["Data_Nascimento"])
+                    );
+                    clienteRepository.Inserir(cliente);
+                    HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Usuario);
+                    return RedirectToAction("index","Cliente");
+                }
+
+            }catch(Exception e)
+            {
+                return View("Fracasso");
+            }
+
+
+
+
+            return View("Fracasso");
+
+        }
+
     }
 }

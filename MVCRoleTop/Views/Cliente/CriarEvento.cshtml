@@ -1,0 +1,52 @@
+<link href="~/css/style-login.css" rel="stylesheet" type="text/css">
+<main>
+
+    <section id="cadastro">
+
+    <h2>Orçamento</h2>
+        <form method="POST" action='@Url.Action("CriarEvento", "Cliente")'>
+
+            <br />
+            <div>
+                <label for="nome-evento">Nome Do Evento</label>
+                <br />
+                <input type="text" name="NomeDoEvento">
+            </div>
+
+            <br />
+
+            <div>
+                <label for="data-evento">Data do Evento</label>
+                <br />
+                <input type="date" name="DataDoEvento">
+            </div>
+
+            <br />
+
+            <div>
+                <label for="quantidade-pessoas">Quantidade de Pessoas</label>
+                <br />
+                <input type="number" name="QuantidadeDePessoas" pattern="^[0–9]$" min="1" max="1000" placeholder="Quantidade de pessoas">
+            </div>
+
+            <br />
+
+            <div>
+                <select name="Pacote">
+
+                    <option value="Normal">Normal</option>
+                    <option value="ComMusica">Com Música</option>
+                    <option value="ComIluminacao">Com Iluminação</option>
+                    <option value="ComMusicaEIluminacao">Com Música e Iluminação</option>
+                </select>
+            </div>
+
+            <br />
+
+            <input type="submit">
+        </form>
+
+    </section>
+
+
+</main>

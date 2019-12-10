@@ -104,3 +104,37 @@ footer p {
         flex-direction: column;
     }
 }
+
+/**
+*TODO ***********************************************************
+*TODO                    INICIO - AREA_CLIENTE
+*TODO ***********************************************************/
+
+#areacliente {
+    display: flex;
+    align-items: center;
+    justify-content:space-around; 
+    flex-direction: column;
+}
+
+#areacliente h2 {
+    margin: 2.7%;
+    padding: 2.7%;
+}
+
+#areacliente p {
+    color: #ffffff;
+}
+
+#areacliente tr {
+    display: flex;
+    align-items: center;
+    justify-content:space-around; 
+    flex-direction: column;
+    color: #ffffff;
+}
+
+/** 
+*TODO ***********************************************************
+*TODO                    FIM - AREA_CLIENTE
+*TODO ***********************************************************/

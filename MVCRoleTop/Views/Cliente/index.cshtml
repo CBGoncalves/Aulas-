@@ -1,0 +1,44 @@
+@model RoleTopOficial.ViewModel.ClienteViewModel
+<link href="~/css/style-login.css" rel="stylesheet" type="text/css">
+
+<main>
+  <section id = areacliente>
+
+      <h2>Area do cliente</h2>
+      <p>@Model.Usuario</p>
+
+      <h2>Seus eventos: </h2>
+      <table>
+        <tr>
+          <th>Nome:</th>
+          <th>Data Do Evento:</th>
+          <th>Tipo De Evento:</th>
+          <th>Numero De Pessoas:</th>
+          <th>Situação:</th>
+        </tr>
+          @foreach(var meuevento in @Model.Eventos)
+          {
+              <tr>
+                  <td>@meuevento.Nome</td>
+                  <td>@meuevento.DataDoEvento</td>
+                  <td>@meuevento.TipoDeEvento</td>
+                  <td>@meuevento.NumeroDePessoas</td>
+                  @if(@meuevento.Status == 0){
+                    <td>Pendente</td>
+                  }else if(@meuevento.Status == 1){
+                    <td>Aprovado</td>
+                  }else if(@meuevento.Status == 2){
+                    <td>Reprovado</td>
+                  }
+                  
+              </tr>
+          }
+      </table>
+
+      <a  asp-controller="Cliente" asp-action="CriarEvento">
+          <input type="Submit" value="Criar Evento">
+      </a>
+
+  </section>
+</main>
+

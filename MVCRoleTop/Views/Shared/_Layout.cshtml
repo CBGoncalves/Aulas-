@@ -1,10 +1,7 @@
-﻿@{
-    var nomeView = (string) ViewData["NomeView"];
-}
-
-<!DOCTYPE html>
+﻿
+@model RoleTopOficial.ViewModel.ClienteViewModel
+<!DOCTYPE HTML>
 <html>
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,46 +11,34 @@
         <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
         <link href="/css/style.css" rel="stylesheet" type="text/css">
 
-        @if(!"Home".Equals(nomeView))
-    {
-        <link href="~/css/style-login.css" rel="stylesheet" type="text/css">
-        <link href="style-local.css" rel="stylesheet" type="text/css">
-        
-    }
-        
+    
+
 
     </head>
-
     <body>
         <header>
             <nav>
                 <ul>
-                    <li id="bt-mobile-menu">
-                        <!-- HTML para colocar os ícones do FA -->
-                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="active">Principal</a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="active">Agenda</a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Orcamento" asp-action="Index">Orçamento</a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Local" asp-action="Index"> Local</a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Login_Cadastro">Login</a> / <a
-                            asp-controller="Cliente" asp-action="Login_Cadastro">Cadastrar-se</a></li>
-
+                <a asp-controller="Home" asp-action="index">Inicio</a>
+                <a asp-controller="Local" asp-action="Index">Local</a>
+                <a href="#">Contato</a>
+                @if(string.IsNullOrEmpty(@Model.Usuario))
+                {
+                    <a asp-controller="Cadastro" asp-action="index">Cadastre-se</a>
+                    <a asp-controller="Cadastro" asp-action="Login">Login</a>
+                }else{
+                    <a asp-controller="Cliente" asp-action="index">Eventos</a>
+                    <a asp-controller="Cliente" asp-action="Logoff">Logoff</a>
+                }
                 </ul>
             </nav>
 
-            @if("Home".Equals(nomeView))
-        {
-            Html.RenderPartial("_HeaderHomePage");
-        }
-
+        
         </header>
 
-        @RenderBody()
-
-    <footer>
+    @RenderBody()
+    
+        <footer>
         <address>
 
             <p>Facebook</p>
@@ -70,35 +55,6 @@
 
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            var ul = document.querySelector("nav ul");
-            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
-            var icon = document.querySelector(".icon > i");
-
-            ul.classList.toggle("mobile-mode");
-
-            if (icon.classList.contains("fa-bars")) {
-                icon.classList.remove("fa-bars");
-                icon.classList.remove("fa");
-
-                icon.classList.add("fas");
-                icon.classList.add("fa-times");
-            } else {
-                icon.classList.remove("fas");
-                icon.classList.remove("fa-times");
-
-                icon.classList.add("fa");
-                icon.classList.add("fa-bars");
-            }
-
-            for (var button of commonButtons) {
-                button.classList.toggle("active");
-            }
-
-        }
-
-    </script>
-
+    @RenderBody()
     </body>
 </html>

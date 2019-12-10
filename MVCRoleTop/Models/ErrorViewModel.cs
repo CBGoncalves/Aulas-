@@ -1,6 +1,6 @@
 using System;
 
-namespace MVCRoleTop.Models
+namespace RoleTopOficial.Models
 {
     public class ErrorViewModel
     {

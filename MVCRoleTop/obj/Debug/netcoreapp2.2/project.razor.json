@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\43442346851\\Documents\\MVCRoleTop\\MVCRoleTop.csproj",
+  "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\RoleTopOficial.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2958,71 +2958,76 @@
     ],
     "CSharpLanguageVersion": 703
   },
-  "RootNamespace": "MVCRoleTop",
+  "RootNamespace": "RoleTopOficial",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\43442346851\\Documents\\MVCRoleTop\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\43442346851\\Documents\\MVCRoleTop\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\43442346851\\Documents\\MVCRoleTop\\Views\\Orcamento\\Index.cshtml",
-      "TargetPath": "Views\\Orcamento\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\43442346851\\Documents\\MVCRoleTop\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\43442346851\\Documents\\MVCRoleTop\\Views\\Cliente\\Login_Cadastro.cshtml",
-      "TargetPath": "Views\\Cliente\\Login_Cadastro.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\43442346851\\Documents\\MVCRoleTop\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\43442346851\\Documents\\MVCRoleTop\\Views\\Local\\Index.cshtml",
-      "TargetPath": "Views\\Local\\Index.cshtml",
+      "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\Views\\Administrador\\Dashboard.cshtml",
+      "TargetPath": "Views\\Administrador\\Dashboard.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\43442346851\\Documents\\MVCRoleTop\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\Views\\Cadastro\\Index.cshtml",
+      "TargetPath": "Views\\Cadastro\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\Views\\Cliente\\CriarEvento.cshtml",
+      "TargetPath": "Views\\Cliente\\CriarEvento.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\43442346851\\Documents\\MVCRoleTop\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\43442346851\\Documents\\MVCRoleTop\\Views\\Shared\\Erro.cshtml",
-      "TargetPath": "Views\\Shared\\Erro.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\43442346851\\Documents\\MVCRoleTop\\Views\\Shared\\Sucesso.cshtml",
-      "TargetPath": "Views\\Shared\\Sucesso.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\43442346851\\Documents\\MVCRoleTop\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\43442346851\\Documents\\MVCRoleTop\\Views\\Shared\\_HeaderHomePage.cshtml",
+      "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\Views\\Shared\\_HeaderHomePage.cshtml",
       "TargetPath": "Views\\Shared\\_HeaderHomePage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\Views\\Cadastro\\Login.cshtml",
+      "TargetPath": "Views\\Cadastro\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\Views\\Local\\Index.cshtml",
+      "TargetPath": "Views\\Local\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\43442346851\\Documents\\Exercicio\\MVCRoleTop\\Views\\Cliente\\index.cshtml",
+      "TargetPath": "Views\\Cliente\\index.cshtml",
       "FileKind": "mvc"
     }
   ],
