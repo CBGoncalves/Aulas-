@@ -1,20 +1,20 @@
-@model RoleTopOficial.ViewModel.ClienteViewModel
+@model MVCRoleTop.ViewModel.ClienteViewModel
 <link href="~/css/style-login.css" rel="stylesheet" type="text/css">
 
 <main>
   <section id = areacliente>
 
       <h2>Area do cliente</h2>
-      <p>@Model.Usuario</p>
+      <h1>@Model.Usuario</h1>
 
       <h2>Seus eventos: </h2>
       <table>
         <tr>
-          <th>Nome:</th>
-          <th>Data Do Evento:</th>
-          <th>Tipo De Evento:</th>
-          <th>Numero De Pessoas:</th>
-          <th>Situação:</th>
+          <th>Nome</th>
+          <th>Data Do Evento</th>
+          <th>Tipo De Evento</th>
+          <th>Numero De Pessoas</th>
+          <th>Situação</th>
         </tr>
           @foreach(var meuevento in @Model.Eventos)
           {
@@ -38,6 +38,10 @@
       <a  asp-controller="Cliente" asp-action="CriarEvento">
           <input type="Submit" value="Criar Evento">
       </a>
+
+  </section>
+
+  <section id = espaco>
 
   </section>
 </main>

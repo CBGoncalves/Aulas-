@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace RoleTopOficial.Controllers
+namespace MVCRoleTop.Controllers
 {
     public class AbstractController : Controller
     {

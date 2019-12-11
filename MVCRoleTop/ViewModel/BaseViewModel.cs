@@ -1,7 +1,7 @@
-namespace RoleTopOficial.ViewModel
+namespace MVCRoleTop.ViewModel
 {
     public class BaseViewModel
     {
-
+        
     }
 }

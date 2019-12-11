@@ -5,11 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using RoleTopOficial.Models;
-using RoleTopOficial.Repositories;
-using RoleTopOficial.ViewModel;
+using MVCRoleTop.Models;
+using MVCRoleTop.Repositories;
+using MVCRoleTop.ViewModel;
 
-namespace RoleTopOficial.Controllers
+namespace MVCRoleTop.Controllers
 {
     public class CadastroController : AbstractController
     {

@@ -2,9 +2,9 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 
-using RoleTopOficial.Models;
+using MVCRoleTop.Models;
 
-namespace RoleTopOficial.Repositories
+namespace MVCRoleTop.Repositories
 {
     public class EventoRepository
     {

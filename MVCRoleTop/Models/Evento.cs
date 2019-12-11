@@ -1,7 +1,7 @@
 using System;
-using RoleTopOficial.Enums;
+using MVCRoleTop.Enums;
 
-namespace RoleTopOficial.Models
+namespace MVCRoleTop.Models
 {
     public class Evento
     {

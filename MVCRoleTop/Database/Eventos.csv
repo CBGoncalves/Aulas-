@@ -1,9 +1,4 @@
-ID=1;DonoDoEvento=Satva;Nome=fudidosanonimos;DataDoEvento=12/11/2019 00:00:00;TipoDeEvento=ComIluminacao;NumeroDePessoas=10;Status=1
-ID=2;DonoDoEvento=Satva;Nome=animalia;DataDoEvento=05/11/2019 00:00:00;TipoDeEvento=ComMusica;NumeroDePessoas=10;Status=1
-ID=3;DonoDoEvento=ferdinando;Nome=eventodoomer;DataDoEvento=30/10/2019 00:00:00;TipoDeEvento=ComIluminacao;NumeroDePessoas=50;Status=1
-ID=4;DonoDoEvento=ferdinando;Nome=senegal;DataDoEvento=05/11/2019 00:00:00;TipoDeEvento=ComMusicaEIluminacao;NumeroDePessoas=80;Status=1
-ID=5;DonoDoEvento=Satva;Nome=Festival Vegetariano;DataDoEvento=05/11/2019 00:00:00;TipoDeEvento=ComMusica;NumeroDePessoas=100;Status=1
-ID=6;DonoDoEvento=Satva;Nome=MeCancelaAiSeuBosta;DataDoEvento=13/11/2019 00:00:00;TipoDeEvento=ComIluminacao;NumeroDePessoas=10;Status=2
-ID=7;DonoDoEvento=Satva;Nome=skamskdaksd;DataDoEvento=06/11/2019 00:00:00;TipoDeEvento=Normal;NumeroDePessoas=2;Status=1
-ID=8;DonoDoEvento=kleber;Nome=Nícolas Silva Freitas;DataDoEvento=01/01/0001 00:00:00;TipoDeEvento=ComIluminacao;NumeroDePessoas=1;Status=2
-ID=9;DonoDoEvento=Ana;Nome=baladinha;DataDoEvento=09/12/2019 00:00:00;TipoDeEvento=ComMusicaEIluminacao;NumeroDePessoas=124;Status=0
+ID=1;DonoDoEvento=Ana;Nome=baladinha;DataDoEvento=09/12/2019 00:00:00;TipoDeEvento=ComMusicaEIluminacao;NumeroDePessoas=124;Status=1
+ID=2;DonoDoEvento=Nicolal;Nome=Festa;DataDoEvento=10/12/2019 00:00:00;TipoDeEvento=ComIluminacao;NumeroDePessoas=50;Status=1
+ID=3;DonoDoEvento=Nicolal;Nome=Seita Satânica;DataDoEvento=11/12/2019 00:00:00;TipoDeEvento=ComIluminacao;NumeroDePessoas=10;Status=1
+ID=4;DonoDoEvento=Nicolal;Nome=Seita Satânica part.2;DataDoEvento=12/01/2020 00:00:00;TipoDeEvento=ComIluminacao;NumeroDePessoas=50;Status=2

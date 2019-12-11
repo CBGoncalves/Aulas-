@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using RoleTopOficial.ViewModel;
-using RoleTopOficial.Models;
+using MVCRoleTop.ViewModel;
+using MVCRoleTop.Models;
 
-namespace RoleTopOficial.ViewModel
+namespace MVCRoleTop.ViewModel
 {
     public class ClienteViewModel : BaseViewModel
     {

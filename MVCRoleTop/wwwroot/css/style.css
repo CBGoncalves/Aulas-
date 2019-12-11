@@ -201,6 +201,10 @@ nav ul > a {
     
 }
 
+#perguntas-frequentes div {
+    border: 1px inset #FFC600
+}
+
 footer {
     color: #ffffff;
     background-color: black;

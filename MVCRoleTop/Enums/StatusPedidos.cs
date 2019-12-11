@@ -1,4 +1,4 @@
-namespace RoleTopOficial.Enums
+namespace MVCRoleTop.Enums
 {
     public enum StatusPedidos : uint
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace RoleTopOficial.Models
+namespace MVCRoleTop.Models
 {
     public class Cliente
     {

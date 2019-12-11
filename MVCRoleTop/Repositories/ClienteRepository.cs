@@ -1,8 +1,8 @@
 using System;
 using System.IO;
-using RoleTopOficial.Models;
+using MVCRoleTop.Models;
 
-namespace RoleTopOficial.Repositories
+namespace MVCRoleTop.Repositories
 {
     public class ClienteRepository
     {

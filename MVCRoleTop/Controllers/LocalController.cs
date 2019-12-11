@@ -1,12 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
+using MVCRoleTop.ViewModel;
 
 namespace MVCRoleTop.Controllers
 {
-    public class LocalController : Controller
+    public class LocalController : AbstractController
     {
         public IActionResult Index()
         {
-            return View();
+            ClienteViewModel clienteviewmodel = new ClienteViewModel(ObterUsuarioNomeSession());
+            return View(clienteviewmodel);
         }
     }
 }

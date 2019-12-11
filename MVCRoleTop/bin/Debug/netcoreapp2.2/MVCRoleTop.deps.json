@@ -22,17 +22,17 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "RoleTopOficial/1.0.0": {
+      "MVCRoleTop/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0"
         },
         "runtime": {
-          "RoleTopOficial.dll": {}
+          "MVCRoleTop.dll": {}
         },
         "compile": {
-          "RoleTopOficial.dll": {}
+          "MVCRoleTop.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3232,7 +3232,7 @@
     }
   },
   "libraries": {
-    "RoleTopOficial/1.0.0": {
+    "MVCRoleTop/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
